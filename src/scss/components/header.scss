@@ -1,0 +1,62 @@
+.header {
+   position: fixed;
+   width: 100%;
+   height: var(--header-height);
+   background: linear-gradient(180deg, #303535 0%, rgba(48, 53, 53, 0.04) 100%);
+   backdrop-filter: blur(.05rem);
+   padding: .2rem 0 .24rem;
+   z-index: 100;
+   @media all and (max-width: 1024px){
+      padding: .32rem 0 .05rem;
+   }
+   .logo{
+      svg{
+         height: .5rem;
+         width: 1.52rem;
+         @media all and (max-width: 1024px){
+            height: .37rem;
+            width: 1.19rem;
+         }
+      }
+   }
+   .menu{
+      @media all and (max-width: 1024px){
+         width: 3.6rem; 
+         height: 100vh; 
+         background-color: var(--white); 
+         position: fixed; 
+         top: 0; 
+         right: -3.7rem; 
+         transition: transform .35s linear; 
+         padding: 0 .56rem .85rem .74rem ; 
+         justify-content: end; 
+         ul{ 
+            position: relative; 
+            &::before{ 
+               content: "";
+               position: absolute; 
+               left: 0; 
+               bottom: 0; 
+               width: 100%; 
+               height: 2px; 
+               background-color: var(--black); 
+            } 
+         } 
+          &.active{
+            transform: translateX(-3.6rem);
+         }
+         .menu-item{
+            color: var(--black);
+            font-size: .18rem;
+            font-weight: 500;
+            margin-bottom: .48rem;
+            width: 100%;
+         }
+      }
+   }
+
+}
+.bg_black{
+   background: none;
+   background-color: var(--black);
+}

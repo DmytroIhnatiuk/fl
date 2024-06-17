@@ -1,0 +1,24 @@
+.main-screen{
+   width: 100vw;
+   background: url("@img/bg_main.png") center center/cover no-repeat;
+   section{
+      position: relative;
+      z-index: 0;
+      padding: var(--header-height) 0 .95rem;
+   }
+   @media all and (max-width: 640px){
+      background: url("@img/bg_main_s.png") center center/cover no-repeat;
+   }
+
+}
+.swiper{
+   .partner{
+      @media all and (min-width: 1024px) {
+         &:hover{
+            img{
+               filter: grayscale(0) ;
+               
+            }
+         }}
+   }
+}

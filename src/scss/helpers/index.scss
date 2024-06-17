@@ -1,0 +1,66 @@
+
+@import "h";
+
+.icon-rotate{
+   transform: scale(-1, 1);
+}
+.blur-150{
+   &::after{
+      filter: blur(1.5rem);
+      @media all and (max-width: 640px){
+         filter: blur(.6rem);
+      }
+   }
+   
+}
+.angel{
+   position: absolute;
+   width: .4rem;
+   height: .4rem;
+   @media all and (max-width: 640px){
+      width: .24rem;
+      height: .24rem;
+   }
+}
+.bottom-left{
+   border-bottom: 2px solid var(--black);
+   border-left: 2px solid var(--black);
+   bottom: 0;
+   left: 0;
+}
+.bottom-left_red{
+   border-bottom: 2px solid var(--red);
+   border-left: 2px solid var(--red);
+}
+.bottom-right{
+   border-bottom: 2px solid var(--black);
+   border-right: 2px solid var(--black);
+   bottom: 0;
+   right: 0;
+}
+.bottom-right_red{
+   border-bottom: 2px solid var(--red);
+   border-right: 2px solid var(--red);
+}
+.top-left{
+   border-top: 2px solid var(--black);
+   border-left: 2px solid var(--black);
+   top: 0;
+   left: 0;
+}
+.top-left_red{
+   border-top: 2px solid var(--red);
+   border-left: 2px solid var(--red);
+}
+.top-right{
+   border-top: 2px solid var(--black);
+   border-right: 2px solid var(--black);
+   top: 0;
+   right: 0;
+}
+.top-right_red{
+   border-top: 2px solid var(--red);
+   border-right: 2px solid var(--red);
+}
+
+

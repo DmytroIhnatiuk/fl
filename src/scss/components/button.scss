@@ -1,0 +1,34 @@
+.btn {
+
+
+
+  &disabled,
+  &.disabled {
+    background: var(--dark-grey);
+    color: var(--white);
+  }
+}
+
+.btn-close{
+  width: .4rem;
+  height: .4rem;
+  border: 1px solid var(--black);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border 0.3s linear;
+    &::before,
+    &::after{
+      content: "";
+      position: absolute;
+      width: .2rem;
+      height: .02rem;
+      background: var(--black);
+      transform: rotate(45deg);
+      transition: background 0.3s linear;
+    }
+    &::after{
+      transform: rotate(-45deg);
+    }
+}

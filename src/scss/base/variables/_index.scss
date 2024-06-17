@@ -1,0 +1,33 @@
+@import "typography";
+@import "colors";
+
+:root {
+  //Base
+  --main-font-weight: 400;
+  --font-family: "CeraPro", sans-serif;
+  //Base
+
+  --header-height: #{gem(94)};
+  --header-height-decrement: #{gem(-94)};
+  --container-gap: #{gem(100)};
+  --container-gap-decrement: #{gem(-100)};
+  --section-padding: #{gem(88)};
+  --section-padding-decrement: #{gem(-88)};
+  @media all and (max-width: 1024px) {
+    --header-height: #{gem(77)};
+    --sidebar-width: 3.2rem;
+    --container-gap: #{gem(50)};
+    --section-padding: #{gem(50)};
+    --section-padding-decrement: #{gem(-50)};
+  }
+  @media all and (max-width: 640px) {
+    --container-gap: #{gem(16)};
+    --container-gap-decrement: #{gem(-16)};
+    --section-padding: #{gem(50)};
+    --section-padding-decrement: #{gem(-50)};
+  }
+}
+
+
+
+

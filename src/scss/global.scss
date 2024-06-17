@@ -1,0 +1,32 @@
+
+.container {
+   max-width: 100%!important;
+}
+.swiper-pagination{
+
+   &-progressbar-fill{
+      display: block;
+      background-color: var(--red);
+      height: .03rem;
+      margin: 0 auto 0 0;
+    }
+ }
+ .bg_linear{
+   position: relative;
+   &::before{
+      content: "";
+      position: absolute;
+      width: 17rem;
+      height: 12rem;
+      background: #000;
+      background: url("@img/bg_line.png") center center/cover no-repeat;
+   }
+ }
+
+
+
+
+
+
+
+

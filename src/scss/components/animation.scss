@@ -1,0 +1,85 @@
+.animation{
+   ul{
+      li{
+         div,
+         &::before{
+            opacity: 0;
+            visibility: hidden;
+            transition-property: opacity;
+            transition-duration: 0.5s;
+            transition-timing-function: linear;
+         }
+
+      }
+   }
+&.active{
+   ul{
+      li{
+         div,
+         &::before{
+            opacity: 1;
+            visibility: visible;
+         }
+         &:nth-child(1){
+            &::before{
+              transition-delay: 0;
+            }
+            div{
+               transition-delay: 0.5s;
+            }
+         }
+         &:nth-child(2){
+            &::before{
+               transition-delay: 0.5s;
+            }
+            div{
+               transition-delay: 1s;
+            }
+         }
+         &:nth-child(3){ 
+            &::before{
+               transition-delay: 1s;
+            }
+            div{
+               transition-delay: 1.5s;
+            }
+         }
+         &:nth-child(4){
+            &::before{
+               transition-delay: 1.5s;
+            }
+            div{
+               transition-delay: 2s;
+            }
+         }
+         &:nth-child(5){
+            &::before{
+               transition-delay: 2s;
+            }
+            div{
+               transition-delay: 2.5s;
+            }
+         }
+      }
+   }
+}
+}
+
+.animation-screen{
+   &.active{
+      // animation: scale 2s ease-in-out; 
+      .decorative-angels {
+         animation: angle 2s ease-in-out .3s;
+      }
+   }
+}
+
+@keyframes angle{
+   0%{
+      opacity: 0;
+   }
+   100%{
+      opacity: 1;
+
+   }
+}
